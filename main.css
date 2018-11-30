@@ -2,34 +2,92 @@
 
 The light (gray?) color is #c5c1c0 */
 
- 
+@font-face {
+    font-family: Avenir-Next;
+    src: local("Avenir-Next"),
+         url(fonts/avenir-next-regular.woff) format('woff');
+  }
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: local("Gotham-Medium"),
+         url(fonts/Gotham-Medium.woff) format('woff');
+  }
+
+@font-face {
+    font-family: Gotham-Bold;
+    src: local("Gotham-Bold"),
+         url(fonts/Gotham-Bold.woff) format('woff');
+  }
+
 
 nav {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr .25fr;
     height: 125px;
-    border: solid;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #1a2930;
+    height: 250px;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Gotham-Medium;
+}
+
+a:hover {
+    opacity: .5;
 }
 
 img {
-    width: 30px;
-    margin-top: 15px;
+    width: 32px;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    display: inline-block;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+    opacity: .5;
+    line-height: 1.5;
+    font-family: Gotham-Medium;
+    font-size: 1.25em;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Gotham-Medium;
+    font-size: 4em;
+    padding-top: 80px;
 }
 
 h3 {
     color: black;
+    font-family: Gotham-Medium;
+}
+
+.faculty-header {
+    height: 500px;
+    background-size: cover;
+    background-image: url("images/home-academics-1.jpg")  
 }
 
 .header {
     text-decoration: none;
     background: #1a2930;
     color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 5px 40px 5px 40px;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 30px;
 }
 
@@ -40,20 +98,177 @@ img:hover {
 
 .nav-icon {
     background: #f7ce3e;
-    width: 75px;
-    margin-left: 25px;
-    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
-.ewu,
-.vcd {
+.ewu-vcd {
     text-align: center;
+    padding-top: 13px;
+    font-family: Gotham-Medium;
+    font-size: 1.5em;
 }
 
-.ewu {
-    padding-top: 10px;
+.sub-header {
+    height: 200px;
 }
 
-.vcd {
-    padding-bottom: 10px;
+.faculty-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 15px 15px;
+    height: 1000px;
+    margin-top: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
+
+.faculty-main-1 {
+    grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+    grid-row-end: 3;
+    background: #1a2930;
+}
+
+.faculty-main-2 {
+    position: relative;
+    background-size: cover;
+    background-image: url("images/9253382eb14fb98154331e05a474db48.jpg");
+}
+
+.faculty-main-3 {
+    position: relative;
+    background-size: cover;
+    background-image: url("images/mgutmann_photo_.jpg");
+}
+
+.faculty-main-4 {
+    position: relative;
+    background-size: cover;
+    background-image: url("images/jeffclark.jpg");
+}
+
+.faculty-main-5 {
+    position: relative;
+    background-size: cover;
+    background-image: url("images/august_0.png");
+}
+
+.faculty-main-6 {
+    position: relative;
+    background-size: cover;
+    background-image: url("images/facultyaffairs16.jpg");
+}
+
+.faculty-main-7 {
+    position: relative;
+    background-size: cover;
+    background-image: url("images/5243345869bedde9266cd2e5-750-562.jpg");
+}
+
+.faculty-main-8 {
+    position: relative;
+    background-size: cover;
+    background-image: url("images/Sarah-Ballard-MIT-Kavli_0.jpg");
+}
+
+.faculty-main-9 {
+    position: relative;
+    background-size: cover;
+    background-image: url("images/lcad_grant_similitude.jpg");
+}
+
+.faculty-main-10 {
+    grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 3;
+    grid-row-end: 5;
+    background: #f7ce3e;
+}
+
+.faculty-h2-1 {
+    color: white;
+    text-align: left;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 50px;
+    padding-top: 125px;
+    font-family: Gotham-Medium;
+    font-size: 3em;
+}
+
+.faculty-h2-2 {
+    text-align: left;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 50px;
+    padding-top: 85px;
+    font-family: Gotham-Medium;
+    font-size: 3em;
+}
+
+.faculty-h5-1 {
+    background-color: #c5c1c0;
+    padding: 5px 20px 5px 20px;
+    display: inline-block;
+    margin-top: 0;
+    position: absolute;
+    font-family: Gotham-Medium;
+}
+
+.faculty-h5-1a {
+    background-color: #c5c1c0;
+    padding: 5px 20px 5px 20px;
+    display: inline-block;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: Gotham-Medium;
+}
+
+.faculty-h5-2 {
+    background-color: #1a2930;
+    padding: 5px 20px 5px 20px;
+    display: inline-block;
+    margin-top: 0;
+    color: white;
+    position: absolute;
+    font-family: Gotham-Medium;
+}
+
+.faculty-h5-2a {
+    background-color: #1a2930;
+    padding: 5px 20px 5px 20px;
+    display: inline-block;
+    margin-top: 0;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: Gotham-Medium;
+}
+
+
+.faculty-h5-3 {
+    background-color: #f7ce3e;
+    padding: 5px 20px 5px 20px;
+    display: inline-block;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: Gotham-Medium;
+}
+
+.footer {
+    display: grid;
+    justify-items: center;
+    padding-top: 50px;
+}
+
+
