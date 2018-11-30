@@ -1,3 +1,59 @@
 /* Yellow color for final project is #f7ce3e. The dark color is #1a2930
 
 The light (gray?) color is #c5c1c0 */
+
+ 
+
+nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr .25fr;
+    height: 125px;
+    border: solid;
+}
+
+img {
+    width: 30px;
+    margin-top: 15px;
+}
+
+h3 {
+    color: black;
+}
+
+.header {
+    text-decoration: none;
+    background: #1a2930;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.header:hover,
+img:hover {
+    opacity: 0.5;
+}
+
+.nav-icon {
+    background: #f7ce3e;
+    width: 75px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.ewu,
+.vcd {
+    text-align: center;
+}
+
+.ewu {
+    padding-top: 10px;
+}
+
+.vcd {
+    padding-bottom: 10px;
+}
