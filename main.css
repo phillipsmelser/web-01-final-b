@@ -29,14 +29,6 @@ a:hover {
     background-color: #f7ce3e;
 }
 
-h1 {
-    text-align: center;
-    color: white;
-    font-family: Gotham-Medium;
-    font-size: 4em;
-    padding-top: 100px;
-}
-
 h3 {
     color: black;
     font-family: Gotham-Medium;
@@ -84,17 +76,6 @@ img {
     outline-offset: -2px;
 }
 
-.header-p {
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    color: white;
-    opacity: .5;
-    line-height: 1.5;
-    font-family: Gotham-Medium;
-    font-size: 1.25em;
-}
-
 .sub-header {
     height: 200px;
 }
@@ -124,6 +105,27 @@ footer {
     background-size: cover;
     background-position: center center;
     background-image: url("images/home-academics-1.jpg")  
+}
+
+.faculty-h1 {
+    text-align: center;
+    color: white;
+    font-family: Gotham-Medium;
+    font-size: 5em;
+    font-weight: 100;
+    padding-top: 100px;
+}
+
+.faculty-header-p {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: -35px;
+    color: white;
+    opacity: .5;
+    line-height: 1.5;
+    font-family: Gotham-Medium;
+    font-size: 1.25em;
 }
 
 .faculty-main {
@@ -213,7 +215,7 @@ footer {
     color: white;
     text-align: left;
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 50px;
     margin-right: 50px;
     padding-top: 125px;
     font-family: Gotham-Medium;
@@ -223,7 +225,7 @@ footer {
 .faculty-h2-2 {
     text-align: left;
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 50px;
     margin-right: 50px;
     padding-top: 85px;
     font-family: Gotham-Medium;
@@ -296,6 +298,27 @@ footer {
     background-image: url("images/AIGAConf.jpg")
 }
 
+.students-header-p {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: -35px;
+    color: #f7ce3e;
+    opacity: .5;
+    line-height: 1.5;
+    font-family: Gotham-Medium;
+    font-size: 1.25em;
+}
+
+.students-h1 {
+    text-align: center;
+    color: #f7ce3e;
+    font-family: Gotham-Medium;
+    font-size: 5em;
+    font-weight: 100;
+    padding-top: 100px;
+}
+
 .students-main-wrapper {
     min-height: 1940px;
 }
@@ -304,7 +327,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-gap: 30px 30px;
+    grid-gap: 25px 25px;
     margin-top: 30px;
     margin-left: 2%;
     margin-right: 2%;
@@ -376,7 +399,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 15px 15px;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-left: 2%;
     margin-right: 2%;
     height: 500px;
