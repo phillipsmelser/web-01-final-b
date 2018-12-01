@@ -1,25 +1,13 @@
-/* Yellow color for final project is #f7ce3e. The dark color is #1a2930
 
-The light (gray?) color is #c5c1c0 */
+/* -------------------COMMON--------------------- */
 
-@font-face {
-    font-family: Avenir-Next;
-    src: local("Avenir-Next"),
-         url(fonts/avenir-next-regular.woff) format('woff');
-  }
+
 
 @font-face {
     font-family: Gotham-Medium;
     src: local("Gotham-Medium"),
          url(fonts/Gotham-Medium.woff) format('woff');
-  }
-
-@font-face {
-    font-family: Gotham-Bold;
-    src: local("Gotham-Bold"),
-         url(fonts/Gotham-Bold.woff) format('woff');
-  }
-
+}
 
 nav {
     display: grid;
@@ -27,15 +15,7 @@ nav {
     height: 100px;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: #1a2930;
-    height: 250px;
-    margin-top: 30px;
-}
-
-a {
+a {    
     text-decoration: none;
     color: white;
     font-family: Gotham-Medium;
@@ -45,25 +25,8 @@ a:hover {
     opacity: .5;
 }
 
-img {
-    width: 30px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: white;
-    outline: 2px solid black;
-    outline-offset: -2px;
-}
-
-p {
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    color: white;
-    opacity: .5;
-    line-height: 1.5;
-    font-family: Gotham-Medium;
-    font-size: 1.25em;
+.header:visited {
+    background-color: #f7ce3e;
 }
 
 h1 {
@@ -77,12 +40,6 @@ h1 {
 h3 {
     color: black;
     font-family: Gotham-Medium;
-}
-
-.faculty-header {
-    height: 500px;
-    background-size: cover;
-    background-image: url("images/home-academics-1.jpg")  
 }
 
 .header {
@@ -117,8 +74,56 @@ img:hover {
     font-size: 1.5em;
 }
 
+img {
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    outline: 2px solid black;
+    outline-offset: -2px;
+}
+
+.header-p {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+    opacity: .5;
+    line-height: 1.5;
+    font-family: Gotham-Medium;
+    font-size: 1.25em;
+}
+
 .sub-header {
     height: 200px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #1a2930;
+    height: 250px;
+    margin-top: 30px;
+}
+
+.footer {
+    display: grid;
+    justify-items: center;
+    padding-top: 50px;
+}
+
+
+
+/* -------------------FACULTY PAGE--------------------- */
+
+
+
+.faculty-header {
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("images/home-academics-1.jpg")  
 }
 
 .faculty-main {
@@ -143,48 +148,56 @@ img:hover {
 .faculty-main-2 {
     position: relative;
     background-size: cover;
+    background-position: center center;
     background-image: url("images/9253382eb14fb98154331e05a474db48.jpg");
 }
 
 .faculty-main-3 {
     position: relative;
     background-size: cover;
+    background-position: center center;
     background-image: url("images/mgutmann_photo_.jpg");
 }
 
 .faculty-main-4 {
     position: relative;
     background-size: cover;
+    background-position: center center;
     background-image: url("images/jeffclark.jpg");
 }
 
 .faculty-main-5 {
     position: relative;
     background-size: cover;
+    background-position: center center;
     background-image: url("images/august_0.png");
 }
 
 .faculty-main-6 {
     position: relative;
     background-size: cover;
+    background-position: center center;
     background-image: url("images/facultyaffairs16.jpg");
 }
 
 .faculty-main-7 {
     position: relative;
     background-size: cover;
+    background-position: center center;
     background-image: url("images/5243345869bedde9266cd2e5-750-562.jpg");
 }
 
 .faculty-main-8 {
     position: relative;
     background-size: cover;
+    background-position: center center;
     background-image: url("images/Sarah-Ballard-MIT-Kavli_0.jpg");
 }
 
 .faculty-main-9 {
     position: relative;
     background-size: cover;
+    background-position: center center;
     background-image: url("images/lcad_grant_similitude.jpg");
 }
 
@@ -259,7 +272,6 @@ img:hover {
     font-family: Gotham-Medium;
 }
 
-
 .faculty-h5-3 {
     background-color: #f7ce3e;
     padding: 5px 20px 5px 20px;
@@ -271,10 +283,181 @@ img:hover {
     font-family: Gotham-Medium;
 }
 
-.footer {
-    display: grid;
-    justify-items: center;
-    padding-top: 50px;
+
+
+/* -------------------STUDENTS PAGE--------------------- */
+
+
+
+.students-header {
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("images/AIGAConf.jpg")
 }
 
+.students-main-wrapper {
+    min-height: 1940px;
+}
 
+.students-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 30px 30px;
+    margin-top: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.students-main-1 {
+    grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+    grid-row-end: 2;
+    background-size: cover;
+    background-position: center center; 
+    background-image: url("images/MFA-GD-slideshow06.jpg")
+}
+
+.students-main-3 {
+    grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2;
+    grid-row-end: 3;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("images/small.jpeg")
+}
+
+.students-main-5 {
+    grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 3;
+    grid-row-end: 4;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("images/female-graphic-designers-the-best-5-proven-ways-to-design-a-tshirt-female-graphic-designers-printable.jpg")
+}
+
+.students-main-7 {
+    grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 4;
+    grid-row-end: 5;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("images/tafe-graphic-design-student.jpg")
+}
+
+.students-h2 {
+    padding-top: 10px;
+    font-size: 2.25em;
+}
+
+.students-h4 {
+    margin-top: -5px;
+    font-size: 1.5em;
+}
+
+.main-p {
+    margin-top: -10px;
+    line-height: 2;
+}
+
+.students-h4,
+.students-h2,
+.main-p {
+    font-family: Gotham-Medium;
+}
+
+.students-sub-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px 15px;
+    margin-top: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 500px;
+}
+
+.students-sub-main-1 {
+    grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #1a2930
+}
+
+.students-sub-main-2 {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("images/89966537-young-handsome-graphic-designer-using-graphics-tablet-to-do-his-work-at-desk.jpg");
+}
+
+.students-sub-main-3 {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("images/ADMISSION-apply.jpg");
+}
+.students-sub-main-4 {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("images/Graphic_design_comm.jpg");
+}
+.students-sub-main-5 {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("images/bgd24.jpg");
+}
+
+.students-h2-1 {
+    color: white;
+    text-align: left;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    font-family: Gotham-Medium;
+    font-size: 3em;
+    border-bottom: #f7ce3e solid 10px;
+}
+
+.students-h2-2 {
+    color: white;
+    text-align: left;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 150px;
+    margin-top: -20px;
+    font-family: Gotham-Medium;
+    font-size: 2.5em;
+}
+
+.students-h5-1 {
+    background-color: #c5c1c0;
+    padding: 5px 20px 5px 20px;
+    display: inline-block;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: Gotham-Medium;
+}
+
+.students-h5-2 {
+    background-color: #f7ce3e;
+    padding: 5px 20px 5px 20px;
+    display: inline-block;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: Gotham-Medium; 
+}
