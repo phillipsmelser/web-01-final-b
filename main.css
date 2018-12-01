@@ -23,8 +23,8 @@ The light (gray?) color is #c5c1c0 */
 
 nav {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr .25fr;
-    height: 125px;
+    grid-template-columns: 27% 13.5% 13.5% 13.5% 13.5% 13.5% 5.5%;
+    height: 100px;
 }
 
 footer {
@@ -48,11 +48,11 @@ a:hover {
 img {
     width: 32px;
     margin-top: 20px;
+    background-color: white;
 }
 
 p {
     text-align: center;
-    display: inline-block;
     margin-left: 150px;
     margin-right: 150px;
     color: white;
@@ -85,7 +85,7 @@ h3 {
     text-decoration: none;
     background: #1a2930;
     color: white;
-    padding: 5px 40px 5px 40px;
+    padding: 5px 20px 5px 20px;
     display: inline-block;
     margin-top: 20px;
     margin-left: 30px;
