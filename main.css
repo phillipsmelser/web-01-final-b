@@ -475,7 +475,7 @@ footer {
     display: inline-block;
     margin-left: 50px;
     margin-right: 50px;
-    padding-top: 55px;
+    padding-top: 60px;
     padding-bottom: 20px;
     font-family: Gotham-Medium;
     font-size: 3em;
@@ -529,7 +529,6 @@ footer {
     }
     
     .students-h2-1 {
-        padding-top: 55px;
         font-size: 2.25em;
         border-bottom: #f7ce3e solid 8px;
     }
